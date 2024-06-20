@@ -1,0 +1,127 @@
+/* line 5, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 7, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: regular;
+}
+
+/* line 11, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+.container {
+  position: relative;
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+/* line 16, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+.main-section {
+  min-height: 900px;
+  padding-top: 57px;
+}
+
+/* line 19, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+.main-section__header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 60px;
+}
+
+/* line 25, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+.main-section__logo {
+  width: 106px;
+}
+
+/* line 27, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+.main-section__login-btn {
+  width: 220px;
+  height: 70px;
+  border: 2px solid #263238;
+  border-radius: 5px;
+  font-size: 24px;
+  background-color: white;
+}
+
+/* line 34, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+.main-section__content-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 661px;
+  align-items: center;
+}
+
+/* line 41, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+.left-wrapper {
+  position: relative;
+}
+
+/* line 43, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+.left-wrapper__title {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 80px;
+  margin-bottom: 40px;
+  width: 386px;
+  letter-spacing: 1px;
+}
+
+/* line 50, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+.left-wrapper__text {
+  font-size: 24px;
+  max-width: 632px;
+  line-height: 37px;
+  margin-bottom: 61px;
+}
+
+/* line 55, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+.left-wrapper__btn {
+  width: 438px;
+  height: 118px;
+  border-radius: 15px;
+  background-color: #263238;
+  font-size: 36px;
+  color: white;
+}
+
+/* line 62, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+.left-wrapper__bulb-icon {
+  position: absolute;
+  top: 95px;
+  right: -26px;
+}
+
+/* line 67, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+.right-wrapper__img {
+  width: 661px;
+  margin: 0 auto;
+}
+
+/* line 73, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+.nav-menu__list {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 76, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+.nav-menu__list-item {
+  margin-right: 64px;
+  font-size: 20px;
+  font-weight: medium;
+}
+
+/* line 80, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+.nav-menu__list-item:last-child {
+  margin-right: 0;
+}
+
+/* line 82, ../Portfolio/portfolio_1_Britlex_landing_page/src/sass/style.sass */
+.nav-menu__list-item a {
+  text-decoration: none;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
