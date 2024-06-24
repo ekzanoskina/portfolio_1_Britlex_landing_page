@@ -2,26 +2,33 @@ $light-grey-color: #F5F5F5
 $grey-text-color: #8F95A5
 $primary-color: #263238
 
+
 *
     box-sizing: border-box
+
 html
     font-family: "Poppins", sans-serif
-    font-weight: regular
-
+    line-height: 1.5rem
+    font-size: 1rem
+    color: #000
+    
+    
 .container
     position: relative
-    max-width: 1340px
+    max-width: 1400px
+    padding: 0 30px
     margin: 0 auto
 
 .main-section
     min-height: 900px
-    padding-top: 57px
+    padding-top: 56px
+
     &__header-container
         display: flex
         justify-content: space-between
         align-items: center
         height: 60px
-        margin-bottom: 60px
+        margin-bottom: 65px
     &__logo
         width: 106px
     &__login-btn
@@ -34,24 +41,29 @@ html
     &__content-container
         display: flex
         justify-content: space-between
-        min-height: 661px
-        align-items: center
-        
+      
 
 .left-wrapper
     position: relative
+    max-width: 560px
+    padding-right: 15px
+    padding-top: 45px
     &__title
-        font-size: 64px
         font-weight: 600
-        line-height: 80px
-        margin-bottom: 40px
-        width: 386px
+        font-size: 4rem
+        line-height: 5rem
+        padding-right: 120px
+        margin-bottom: 35px
+        position: relative
         letter-spacing: 1px
+        br:last-child
+            display: none
+
     &__text
-        font-size: 24px
-        max-width: 632px
-        line-height: 37px
-        margin-bottom: 61px
+        font-size: 1.5rem
+        line-height: 2.25rem
+        color: #8f95a5
+        margin-bottom: 67px
     &__btn
         width: 438px
         height: 118px
@@ -61,14 +73,14 @@ html
         color: white
     &__bulb-icon
         position: absolute
-        top: 95px
-        right: -26px
+        top: 138px
+        right: 18px
+
 .right-wrapper
     &__img
-        width: 661px
-        margin: 0 auto
-        
+        max-width: 650px
 
+  
 .nav-menu
     &__list
         display: flex
@@ -82,3 +94,118 @@ html
         a
             text-decoration: none
             color: black
+.title
+    font-size: 3rem
+    font-weight: 600
+    line-height: 5rem
+    letter-spacing: 1px
+    
+
+.skills-section
+    padding-top: 40px
+    &__grid
+        display: grid
+        gap: 20px
+        grid-template: 531px 343px / repeat(3, 1fr)
+        grid-template-areas: "one two three" "one four four"
+    &__title
+        text-align: center
+        margin-bottom: 92px
+
+.grid-item
+    display: flex
+    flex-direction: column
+    overflow: hidden
+    background-color: $light-grey-color
+    padding: 20px 30px 44px 43px
+    align-items: stretch
+    border-radius: 10px
+    &__content
+        &_one
+            padding-left: 20px
+    &_one
+        grid-area: one
+        padding: 38px 23px 20px 20px
+    &_two
+        grid-area: two
+        max-height: 531px
+        padding-top: 35px
+        padding-left: 36px
+    &_three
+        padding-left: 36px
+        grid-area: three
+    &_four
+        grid-area: four
+        display: flex
+        flex-direction: row-reverse
+        justify-content: space-between
+        align-items: center
+        padding-top: 53px
+    
+    &__img
+        &_one
+            margin-bottom: 30px
+        &_two
+            display: flex
+            justify-content: end
+            margin-bottom: 15px
+            margin-left: 36px
+        &_three
+            margin-bottom: 35px
+            
+    &__btn
+        color: white
+        background-color: $primary-color
+        border-radius: 5px
+        height: 60px
+        width: 218px
+        font-size: 20px
+        font-weight: 500
+        line-height: 30px
+        border: none
+        cursor: pointer
+        transition: 0.3s all
+    &__btn:hover
+        opacity: 0.8
+    &__title
+        font-weight: 600
+        font-size: 1.875rem
+        letter-spacing: 1px
+        &_one
+            margin-bottom: 30px
+        &_two
+            margin-bottom: 17px
+        &_three
+            margin-bottom: 10px
+        &_four
+            margin-bottom: 20px
+
+    &__text
+        font-size: 16px
+        font-weight: 400
+        color: #8F95A5
+        line-height: 24px
+        max-width: 360px
+        width: 100%
+        margin-bottom: 35px  
+        &_one:nth-of-type(1)
+            margin-bottom: 22px
+        &_one:nth-of-type(2)
+            margin-bottom: 37px
+            max-width: 330px
+        &_four
+            margin-bottom: 24px
+            max-width: 340px
+
+
+
+
+@media (max-width: 1280px)
+    .skills-section__grid
+        grid-template-areas: "one two" "three four"
+    .listening
+        display: block
+
+@media (max-width: 1024px)
+    .skills-section__grid
+        grid-template-areas: "one" "two" "three" "four"
