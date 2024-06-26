@@ -199,7 +199,7 @@ html
             max-width: 340px
 
 .about-section
-    min-height: 900px
+    min-height: 700px
     &__containter
         padding-top: 142px
         padding-right: 40px
@@ -242,7 +242,69 @@ html
     color: #8f95a5
     font-size: 1.25rem
     line-height: 1.875rem
-    
+
+.pricing-section
+    min-height: 900px
+    padding-top: 150px
+    &__title
+        text-align: center
+        margin-bottom: 57px
+    &__pricing-box
+        display: flex
+    &__pricing-item
+        margin-right: 25px
+        &:last-child
+            margin-right: 0
+
+
+
+
+.pricing-item
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    max-width: 425px
+    width: 100%
+    &_two
+        padding-left: 25px
+
+    &__title
+        font-weight: 600
+        font-size: 1.875rem
+        line-height: 3rem
+        margin-bottom: 20px
+        letter-spacing: 0.6px
+    &__img
+        height: 332px
+        max-width: 100%
+        margin-bottom: 20px
+        &_one
+            padding-left: 25px
+        &_two
+            padding-top: 26px
+            padding-left: 1px
+        &_three
+            padding-left: 53px
+    &__text
+        margin-bottom: 28px
+        flex: 1 1 auto
+    &__btn
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        width: 240px
+        height: 45px
+        background-color: #eeeeee
+        border-radius: 5px
+        color: #546269
+        font-size: 1.125rem
+        line-height: 1.6875rem
+        border: none
+        span
+            color: #263238
+            font-size: 1.875rem
+            line-height: 2.8125rem
+
 
 
 @media (max-width: 1280px)
